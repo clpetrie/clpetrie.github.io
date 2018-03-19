@@ -12,6 +12,35 @@
         </td>
       </tr>
     </table>
-    
+
+<!-- <button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time. </button>
+
+<p id="demo"></p> -->
+
+<!--<button onclick="document.getElementById('myImage').src='pictures/pic_bulbon.gif'">Turn on the light</button>-->
+<script type="text/javascript">
+  var ison = false;
+
+function checkon(input){
+   if (Boolean(input)) {
+      return "document.getElementById('myImage').src='pictures/pic_bulbon.gif';
+   } else {
+      return "document.getElementById('myImage').src='pictures/pic_bulbon.gif';
+   }
+</script>
+<button 
+   onclick=checkon(ison);
+>Switch</button>
+<!--<button
+      onclick="document.getElementById('myImage').src='pictures/'+filepos(ison)";
+>Switch</button>-->
+
+
+<img id="myImage" src="pictures/pic_bulboff.gif" style="width:100px">
+
+<!--<button onclick="document.getElementById('myImage').src='pictures/pic_bulboff.gif'">Turn off the light</button>-->
+
 </html>
 </body>
